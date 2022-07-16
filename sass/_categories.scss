@@ -1,0 +1,53 @@
+.categories{
+    grid-column: 1/ -1;
+    background-color: #109d5833;
+    padding: 10rem 4rem;
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 2rem;
+        
+    }
+
+    .content-box{
+        display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+        grid-template-rows: repeat(3, 1fr);
+        grid-row-gap: 2rem;
+        margin-top: 4rem;
+    }
+
+    &-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: #fff;
+        padding: 3rem;
+        width: 80%;
+        text-align: center;
+        margin: 0 10%;
+        border-radius: 1rem;
+
+        @include hover-2;
+    }
+
+    h2{
+        text-transform:capitalize;
+        font-size: 2rem;
+    }
+
+    &-img{
+        height: 5rem;
+        width: 5rem;
+        border-radius: 50%;
+    }
+
+    button{
+        margin:5rem 35%;
+      //  transform: translateY(14rem);
+    }
+}

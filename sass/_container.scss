@@ -1,0 +1,13 @@
+.container{
+    display: grid;
+    grid-template-rows:[nav-start]min-content[nav-end head-start] 80rem[head-end benefit-start] 1fr[benefit-end register-start] 60rem
+    [register-end course-start] 1fr [course-end tutor-start] 75rem [tutor-end sub-start]50rem[sub-end footer-start] 30rem[footer-end] ;
+    grid-template-columns: repeat(8, [col-start] 1fr[col-end]);
+
+    @media screen and (max-width:50em) {
+    grid-template-rows:min-content ;
+ 
+ 
+    }
+ 
+}

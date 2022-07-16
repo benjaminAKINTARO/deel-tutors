@@ -1,0 +1,14 @@
+.register{
+    display: grid;
+    grid-column: col-start 5/ -1;
+    justify-content: center;
+    align-content: center;
+@media screen and (max-width:50em) {
+ grid-column: 1/ -1;
+ grid-row: 6/7;
+    }
+    .heading-3{
+        font-size: 4rem;
+        padding: 0;
+    }
+}

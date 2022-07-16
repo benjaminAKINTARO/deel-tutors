@@ -1,0 +1,18 @@
+.header{
+    display: grid;
+    height: 50vh;
+    //grid-template-columns: repeat(2, 1fr);
+    grid-gap: .2rem;
+    align-content:center;
+    justify-content:center;
+    grid-column: col-start 1/col-end 4;
+    height: 75rem;
+    padding: 0 3rem;
+      @media screen and (max-width:50em) {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: max-content;
+    padding-top:10%;
+    }
+ 
+}

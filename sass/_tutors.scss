@@ -1,0 +1,126 @@
+.tutors{
+    grid-column: 1/ -1;
+    background-color: #f5f3e9;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2,min-content);
+    justify-content: center;
+    align-content: center;
+    &-content{
+        grid-column: 1/2;
+        padding: 3rem;
+        align-self: center;
+        justify-items: center;
+        @media screen and (max-width:50em) {
+        grid-column: 1/ -1;
+    }
+        
+    }
+    p{
+        font-size: 1.5rem;
+    
+    }
+
+       &-info{
+        align-self: end;
+        justify-self: center;
+        padding: 15rem;
+        height: 90%;
+        @media screen and (max-width:50em) {
+        grid-column: 1/-1;
+        padding:25rem 10rem;
+        height: min-content;
+        }
+
+          @media screen and (max-width:37.5em) {
+        padding: 6rem;
+        grid-column: 1/-1;
+        }
+        
+        
+
+        
+       }
+    &-image{
+        background-color: #fff;
+        border-radius: 4rem;
+        overflow: hidden;
+        align-self: center;
+        justify-self: center;
+        box-shadow:0 .1rem .5rem rgba($color: #000000, $alpha: .05);
+        @include hover-2;
+    }
+    .info{
+    border-radius:4rem;
+    transform: translateY(-3rem);
+    background-color: #fff;
+   }
+    .img-body{
+        height: 50%;
+        width: 100%;
+         object-fit: cover;
+    }
+
+    .link{
+        background-color: #fff;
+        height: 6rem;
+        width: 6rem;
+        border-radius: 50%;
+        transform: translateY(-50%);
+        margin:0 3rem;
+        box-shadow:0 .1rem .5rem rgba($color: #000000, $alpha: .4);
+    }
+    .fa-send{
+        background-color:#429ac0;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 50%;
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+        transform: translate(25%, 25%);
+        padding-top: 10%;
+    }
+
+  .country{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   padding: 2rem;
+    margin-top: -4rem;
+    text-transform: capitalize;
+    .img-2{
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .icon-1{
+        color:gold;
+    }
+ }
+   h4{
+        font-size: 3rem;
+        display: flex;
+        padding: 2.5rem;
+        align-items: center;
+        margin-top: -3.5rem;
+    }
+
+    .icon-2{
+        color: #06e23d;
+        font-size: 1rem;
+        padding: .3rem;
+    }
+    .icon-3{
+        font-size:3rem;
+        padding:0 2.5rem;
+        margin-top: -3rem;
+        margin-bottom: 4rem;
+
+    }
+ 
+
+
+
+
+}

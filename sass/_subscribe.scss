@@ -1,0 +1,36 @@
+.subscribe{
+    grid-column: 1/-1;
+    background-color: $color-secondary;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    @media screen and (max-width:50em) {
+     padding: 4rem 0;
+    }
+
+    &__content{
+        display: grid;
+        grid-row-gap: 3rem;
+        text-align: center;
+        justify-items: center;
+        align-self: center;
+    }
+    &-head{
+        font-size: 4.5rem;
+        text-transform: capitalize;
+        text-align: center;
+    }
+
+    &-para{
+        font-size: 1.5rem;
+        font-weight:600;
+        text-align: center;
+        text-transform: capitalize;
+    }
+
+}
+
+
+
+
+
